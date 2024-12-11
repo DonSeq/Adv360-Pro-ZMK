@@ -76,7 +76,7 @@
 &kp TAB           &kp Q          &kp W           &kp E             &kp R                 &kp T   &kp UNDER                                                                    &kp EQUAL      &kp Y   &kp U                  &kp I              &kp O            &kp P             &kp BSLH
 &mt LCTRL ESCAPE  &kp A          &kp S           &kp D             &kp F                 &kp G   &kp PIPE       &kp LEFT_ALT  &kp F5           &kp C_VOL_DN  &kp C_VOLUME_UP  &kp PLUS       &kp H   &kp J                  &kp K              &kp L            &kp SEMI          &kp SQT
 &shiftdance       &kp Z          &kp X           &kp C             &kp V                 &kp B                                &kp DEL          &kp C_MUTE                                    &kp N   &kp M                  &kp COMMA          &kp DOT          &kp FSLH          &kp RSHFT
-&kp LCTRL         &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS          &kp BACKSPACE  &lt 1 SPACE   &lt 2 ENTER      &kp DEL       &lt 1 ENTER      &kp BACKSPACE          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
+&kp LCTRL         &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS          &kp BACKSPACE  &lt 1 SPACE   &lt 2 ENTER      &lt 2 DEL     &lt 1 ENTER      &kp BACKSPACE          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
             >;
         };
 
@@ -92,11 +92,11 @@
 
         fn {
             bindings = <
-&none   &trans    &trans    &trans     &trans     &trans  &none                                       &none   &trans  &trans  &trans   &trans   &trans   &trans
-&trans  &trans    &trans    &trans     &trans     &trans  &none                                       &none   &trans  &trans  &trans   &trans   &trans   &trans
-&trans  &kp F1    &kp F2    &kp F3     &kp F4     &kp F5  &kp F6  &trans  &trans      &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&trans  &sk LGUI  &sk LALT  &sk LSHFT  &sk LCTRL  &trans                  &trans      &trans                  &trans  &trans  &trans   &trans   &trans   &trans
-&trans  &trans    &trans    &trans     &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
+&none   &trans     &trans     &trans      &trans      &trans   &none                                        &none   &trans  &trans     &trans            &trans          &trans          &trans
+&trans  &kp F7     &kp F8     &kp F9      &kp F10     &kp F11  &kp F12                                      &kp F1  &kp F2  &kp F3     &kp F4            &kp F5          &kp F6          &trans
+&trans  &kp F1     &kp F2     &kp F3      &kp F4      &kp F5   &kp F6   &trans  &trans      &trans  &trans  &kp F7  &kp F8  &kp F9     &kp F10           &kp F11         &kp F12         &trans
+&trans  &lsk LGUI  &lsk LALT  &lsk LSHFT  &lsk LCTRL  &trans                    &trans      &trans                  &trans  &sk RCTRL  &lsk RIGHT_SHIFT  &lsk RIGHT_ALT  &lsk RIGHT_GUI  &trans
+&trans  &trans     &trans     &trans      &trans               &trans   &trans  &trans      &trans  &trans  &trans          &trans     &trans            &trans          &trans          &trans
             >;
         };
 
