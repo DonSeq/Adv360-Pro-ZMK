@@ -22,13 +22,6 @@
             bindings = <&kp RET>;
         };
 
-        gg: gg {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp G &kp G>;
-            label = "GG";
-        };
-
         #endif
 
         hm: homerow_mods {
@@ -131,10 +124,20 @@
         vim {
             bindings = <
 &trans  &trans     &trans     &trans  &trans  &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &gg        &kp LS(W)  &kp K   &kp W   &kp LS(G)   &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp LS(W)  &kp K   &kp W   &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp CARET  &kp H      &kp J   &kp L   &kp DOLLAR  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans  &trans  &trans                      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans  &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
