@@ -22,6 +22,13 @@
             bindings = <&kp RET>;
         };
 
+        gg: gg {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp G>;
+            label = "GG";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -83,21 +90,21 @@
 
         default_layer {
             bindings = <
-&kp GRAVE         &kp N1         &kp N2          &kp N3            &kp N4                &kp N5  &kp TILDE                                                                       &mo 3             &kp N6  &kp N7                 &kp N8             &kp N9           &kp N0            &kp PIPE
-&kp TAB           &kp Q          &kp W           &kp E             &kp R                 &kp T   &kp UNDER                                                                       &kp MINUS         &kp Y   &kp U                  &kp I              &kp O            &kp P             &kp BSLH
-&mt LCTRL ESCAPE  &kp A          &kp S           &kp D             &kp F                 &kp G   &kp EQUAL         &kp LCTRL    &kp LEFT_ALT      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp PLUS          &kp H   &kp J                  &kp K              &kp L            &kp SEMI          &kp SQT
-&shiftdance       &kp Z          &kp X           &kp C             &kp V                 &kp B                                  &kp DEL           &kp C_MUTE                                       &kp N   &kp M                  &kp COMMA          &kp DOT          &kp FSLH          &kp RSHFT
-&mo 4             &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS          &llt 4 BACKSPACE  &lt 1 SPACE  &lt 2 ENTER       &lt 2 DEL     &lt 1 ENTER      &llt 4 BACKSPACE          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
+&kp GRAVE         &kp N1         &kp N2          &kp N3            &kp N4                &kp N5  &kp TILDE                                                                &kp MINUS         &kp N6  &kp N7                 &kp N8             &kp N9           &kp N0            &mo 3
+&kp TAB           &kp Q          &kp W           &kp E             &kp R                 &kp T   &kp UNDER                                                                &kp EQUAL         &kp Y   &kp U                  &kp I              &kp O            &kp P             &kp BSLH
+&mt LCTRL ESCAPE  &kp A          &kp S           &kp D             &kp F                 &kp G   &kp EQUAL         &kp LEFT_ALT  &kp LCTRL        &kp UNDER  &kp PIPE     &kp PLUS          &kp H   &kp J                  &kp K              &kp L            &kp SEMI          &kp SQT
+&shiftdance       &kp Z          &kp X           &kp C             &kp V                 &kp B                                   &kp DEL          &kp TAB                                   &kp N   &kp M                  &kp COMMA          &kp DOT          &kp FSLH          &shiftdance
+&mo 4             &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS          &llt 4 BACKSPACE  &lt 1 SPACE   &lt 2 ENTER      &lt 2 DEL  &lt 1 ENTER  &llt 4 BACKSPACE          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
             >;
         };
 
         nav {
             bindings = <
-&trans  &kp F1              &kp F2          &kp F3           &kp F4           &kp F5               &kp F6                                      &kp F7  &kp F8     &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&trans  &kp PAGE_UP         &kp HOME        &kp UP_ARROW     &kp END          &kp PAGE_DOWN        &trans                                      &trans  &kp MINUS  &kp N7  &kp N8   &kp N9   &trans   &trans
-&trans  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW)  &trans  &trans  &trans      &trans  &trans  &trans  &kp EQUAL  &kp N4  &kp N5   &kp N6   &trans   &trans
-&trans  &lsk LGUI           &sk LEFT_ALT    &lsk LEFT_SHIFT  &lsk LCTRL       &caps_word                           &trans      &trans                  &kp PLUS   &kp N1  &kp N2   &kp N3   &trans   &trans
-&trans  &kp LEFT_GUI        &kp TAB         &trans           &trans                                &trans  &trans  &trans      &trans  &trans  &kp N0             &kp N0  &kp N0   &kp DOT  &trans   &trans
+&trans  &kp F1              &kp F2          &kp F3           &kp F4           &kp F5               &kp C_VOLUME_UP                                        &trans  &kp F6     &kp F7  &kp F8  &kp F9   &kp F10       &kp F11
+&trans  &kp PAGE_UP         &kp HOME        &kp UP_ARROW     &kp END          &kp PAGE_DOWN        &kp C_VOLUME_DOWN                                      &trans  &kp MINUS  &kp N7  &kp N8  &kp N9   &kp ASTERISK  &kp F12
+&trans  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW)  &kp C_MUTE         &trans  &trans      &trans  &trans  &trans  &kp EQUAL  &kp N4  &kp N5  &kp N6   &kp SLASH     &trans
+&trans  &lsk LGUI           &sk LEFT_ALT    &lsk LEFT_SHIFT  &lsk LCTRL       &caps_word                                      &trans      &trans                  &kp PLUS   &kp N1  &kp N2  &kp N3   &trans        &trans
+&trans  &kp LEFT_GUI        &kp TAB         &trans           &trans                                &trans             &trans  &trans      &trans  &trans  &kp N0             &kp N0  &kp N0  &kp DOT  &trans        &trans
             >;
         };
 
@@ -111,7 +118,7 @@
             >;
         };
 
-        mod {
+        sys {
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
@@ -123,11 +130,11 @@
 
         vim {
             bindings = <
-&trans  &trans  &trans     &trans  &trans  &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LS(W)  &kp K   &kp W   &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0  &kp H      &kp J   &kp L   &kp DOLLAR  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans                      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans  &trans  &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &gg        &kp LS(W)  &kp K   &kp W   &kp LS(G)   &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp CARET  &kp H      &kp J   &kp L   &kp DOLLAR  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans  &trans  &trans                      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans  &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
