@@ -91,11 +91,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE         &kp N1         &kp N2          &kp N3            &kp N4                &kp N5  &kp TILDE                                                                &kp MINUS  &kp N6  &kp N7                 &kp N8             &kp N9           &kp N0            &mo 3
-&kp TAB           &kp Q          &kp W           &kp E             &kp R                 &kp T   &kp AMPERSAND                                                            &kp EQUAL  &kp Y   &kp U                  &kp I              &kp O            &kp P             &kp BSLH
-&mt LCTRL ESCAPE  &kp A          &kp S           &kp D             &kp F                 &kp G   &kp CARET         &kp PIPE     &kp TILDE         &kp MINUS  &kp EQUAL    &kp PLUS   &kp H   &kp J                  &kp K              &kp L            &kp SEMI          &kp SQT
-&shiftdance       &kp Z          &kp X           &kp C             &kp V                 &kp B                                  &kp LEFT_ALT      &kp TAB                            &kp N   &kp M                  &kp COMMA          &kp DOT          &kp FSLH          &shiftdance
-&mo 4             &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS          &llt 4 BACKSPACE  &lt 1 SPACE  &lt 2 ENTER       &lt 2 DEL  &lt 1 ENTER  &kp UNDER          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
+&kp GRAVE         &kp N1         &kp N2          &kp N3            &kp N4                &kp N5  &kp TILDE                                                             &kp MINUS  &kp N6  &kp N7                 &kp N8             &kp N9           &kp N0            &mo 3
+&kp TAB           &kp Q          &kp W           &kp E             &kp R                 &kp T   &kp AMPERSAND                                                         &kp EQUAL  &kp Y   &kp U                  &kp I              &kp O            &kp P             &kp BSLH
+&mt LCTRL ESCAPE  &kp A          &kp S           &kp D             &kp F                 &kp G   &kp CARET      &kp PIPE     &kp TILDE         &kp MINUS  &kp EQUAL    &kp PLUS   &kp H   &kp J                  &kp K              &kp L            &kp SEMI          &kp SQT
+&shiftdance       &kp Z          &kp X           &kp C             &kp V                 &kp B                               &kp LEFT_ALT      &kp TAB                            &kp N   &kp M                  &kp COMMA          &kp DOT          &kp FSLH          &shiftdance
+&mo 4             &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS          &kp BACKSPACE  &lt 1 SPACE  &lt 2 ENTER       &lt 2 DEL  &lt 1 ENTER  &kp UNDER          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
             >;
         };
 
