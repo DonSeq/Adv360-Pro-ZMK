@@ -93,19 +93,19 @@
             bindings = <
 &kp GRAVE         &kp N1         &kp N2          &kp N3            &kp N4                &kp N5  &kp TILDE                                                             &kp MINUS  &kp N6  &kp N7                 &kp N8             &kp N9           &kp N0            &mo 3
 &kp TAB           &kp Q          &kp W           &kp E             &kp R                 &kp T   &kp AMPERSAND                                                         &kp EQUAL  &kp Y   &kp U                  &kp I              &kp O            &kp P             &kp BSLH
-&mt LCTRL ESCAPE  &kp A          &kp S           &kp D             &kp F                 &kp G   &kp CARET      &kp PIPE     &kp TILDE         &kp MINUS  &kp EQUAL    &kp PLUS   &kp H   &kp J                  &kp K              &kp L            &kp SEMI          &kp SQT
-&shiftdance       &kp Z          &kp X           &kp C             &kp V                 &kp B                               &kp LEFT_ALT      &kp TAB                            &kp N   &kp M                  &kp COMMA          &kp DOT          &kp FSLH          &shiftdance
-&mo 4             &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS          &kp BACKSPACE  &lt 1 SPACE  &lt 2 ENTER       &lt 2 DEL  &lt 1 ENTER  &kp UNDER          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
+&mt LCTRL ESCAPE  &kp A          &kp S           &kp D             &kp F                 &kp G   &kp PIPE       &kp ESCAPE   &kp LEFT_ALT      &kp MINUS  &kp EQUAL    &kp PLUS   &kp H   &kp J                  &kp K              &kp L            &kp SEMI          &kp SQT
+&shiftdance       &kp Z          &kp X           &kp C             &kp V                 &kp B                               &kp DEL           &kp TAB                            &kp N   &kp M                  &kp COMMA          &kp DOT          &kp FSLH          &shiftdance
+&kp LCTRL         &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS          &kp BACKSPACE  &lt 1 SPACE  &lt 2 ENTER       &lt 2 DEL  &lt 1 ENTER  &kp UNDER          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
             >;
         };
 
         nav {
             bindings = <
-&trans  &kp F1              &kp F2          &kp F3           &kp F4           &kp F5               &kp C_VOLUME_UP                                        &trans  &kp F6     &kp F7  &kp F8  &kp F9   &kp F10       &kp F11
-&trans  &kp PAGE_UP         &kp HOME        &kp UP_ARROW     &kp END          &kp PAGE_DOWN        &kp C_VOLUME_DOWN                                      &trans  &kp MINUS  &kp N7  &kp N8  &kp N9   &kp ASTERISK  &kp F12
-&trans  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW)  &kp C_MUTE         &trans  &trans      &trans  &trans  &trans  &kp EQUAL  &kp N4  &kp N5  &kp N6   &kp SLASH     &trans
-&trans  &lsk LGUI           &sk LEFT_ALT    &lsk LEFT_SHIFT  &lsk LCTRL       &caps_word                                      &trans      &trans                  &kp PLUS   &kp N1  &kp N2  &kp N3   &trans        &trans
-&trans  &kp LEFT_GUI        &kp TAB         &trans           &trans                                &trans             &trans  &trans      &trans  &trans  &kp N0             &kp N0  &kp N0  &kp DOT  &trans        &trans
+&trans      &kp F1              &kp F2          &kp F3           &kp F4           &kp F5               &kp C_VOLUME_UP                                        &trans  &kp F6     &kp F7  &kp F8  &kp F9   &kp F10       &kp F11
+&trans      &kp PAGE_UP         &kp HOME        &kp UP_ARROW     &kp END          &kp PAGE_DOWN        &kp C_VOLUME_DOWN                                      &trans  &kp MINUS  &kp N7  &kp N8  &kp N9   &kp ASTERISK  &kp F12
+&kp ESCAPE  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW)  &kp C_MUTE         &trans  &trans      &trans  &trans  &trans  &kp EQUAL  &kp N4  &kp N5  &kp N6   &kp SLASH     &trans
+&trans      &lsk LGUI           &sk LEFT_ALT    &lsk LEFT_SHIFT  &lsk LCTRL       &caps_word                                      &trans      &trans                  &kp PLUS   &kp N1  &kp N2  &kp N3   &trans        &trans
+&trans      &kp LEFT_GUI        &kp TAB         &trans           &trans                                &trans             &trans  &trans      &trans  &trans  &kp N0             &kp N0  &kp N0  &kp DOT  &trans        &trans
             >;
         };
 
@@ -126,16 +126,6 @@
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
-            >;
-        };
-
-        vim {
-            bindings = <
-&trans  &trans     &trans     &trans  &trans  &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp LS(W)  &kp K   &kp W   &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp CARET  &kp H      &kp J   &kp L   &kp DOLLAR  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans  &trans  &trans                      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans  &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
